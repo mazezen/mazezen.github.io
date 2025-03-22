@@ -63,8 +63,8 @@ disqus: # fromendworld
 
 # Gitalk
 gitalk:
-  clientID: 
-  clientSecret: 
+  clientID: Ov23ligXfgDAb8ayfWJ3
+  clientSecret: 2587917c416c5d4a3889f7dddc49f601a4c0bae7
   repo: mazezen.github.io
   owner: mazezen
 
