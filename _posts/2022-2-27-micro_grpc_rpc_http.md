@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务八  Go-gGRPC 不同端口提供rpc和http服务"
+title: "Go微服务 Go-gGRPC 不同端口提供rpc和http服务"
 date: 2022-2-27
 tags: [Go]
 comments: true

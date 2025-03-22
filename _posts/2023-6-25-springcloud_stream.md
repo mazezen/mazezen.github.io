@@ -8,11 +8,9 @@ author: mazezen
 ---
 
 
-
 Stream 是什么？ 为什么要用Stream？
 > SpringCloud Stream是一个构建消息驱动微服务的框架，应用程序通过inputs或者 outputs来与SpringCloud Stream中的binder进行交互。其实就是为了适配底层消息队列的一个抽象出来的中间件。
 > 使用 Stream 是为了 解决使用不同的消息队列技术所造成技术结构上的不同所带来的困扰。减少底层消息队列学习的一个成本，方便消息队列技术的迁移
-
 
 
 ## 如何使用 案列 -  Rabbitmq

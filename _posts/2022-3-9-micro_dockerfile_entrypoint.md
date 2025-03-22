@@ -1,16 +1,11 @@
 ---
 layout: post
-title: "Go微服务十一  Dockerfile ENTRYPOINT的使用 - 接受参数 读取nacos对应的配置文件"
+title: "Go微服务 Dockerfile ENTRYPOINT的使用 - 接受参数 读取nacos对应的配置文件"
 date: 2022-3-9
 tags: [Go]
 comments: true
 author: mazezen
 ---
-
-
-**在<a href="http://blog.caixiaoxin.cn/?p=540" target="_blank" rel="noopener">[微服务二]</a>这篇文章中，简单谈了从nacos读取服务配置文件。在<a href="http://blog.caixiaoxin.cn/?p=591" target="_blank" rel="noopener">[微服务七]</a>这篇文章中，谈了制作Dockerfile，通过docker将Go项目部署并运行在服务器上。在<a href="http://blog.caixiaoxin.cn/?p=601" target="_balnk" rel="noopener">[微服务八]</a>谈了使用shell脚本一键重新构建基于Docker的Go项目。**
-
-**这篇文章中，实现动态获取nacos对应的配置文件。在<a href="http://blog.caixiaoxin.cn/?p=540" target="_blank" rel="noopener">[微服务二]</a>这篇文章中，获取nacos配置文件，是在代码里面写的nacos的ip、端口、组、DataID。这样写，如果要读取其他配置文件就要改动代码，及其的不方便。如果在项目目录写成配置文件，也行。但是每次打包项目上传服务器，配置文件也要上传。不太方便。**><a href="http://blog.caixiaoxin.cn/?p=540" target="_blank" rel="noopener">[微服务二]</a>这篇文章中，获取nacos配置文件，是在代码里面写的nacos的ip、端口、组、DataID。这样写，如果要读取其他配置文件就要改动代码，及其的不方便。如果在项目目录写成配置文件，也行。但是每次打包项目上传服务器，配置文件也要上传。不太方便。**
 
 **现在通过命令行参数传参的形式，根据传入的参数加载nacos上对应的配置文件。**
 

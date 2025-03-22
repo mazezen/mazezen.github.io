@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go 微服务十三 日志收集项目结构设计及Kafka介绍"
+title: "Go 微服务 日志收集项目结构设计及Kafka介绍"
 date: 2022-3-15
 tags: [Go]
 comments: true

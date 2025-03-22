@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务六  Go - gRPC - TLS 使用rpc-gatway 不同端口同时提供rpc和http服务"
+title: "Go微服务 gRPC - TLS 使用rpc-gatway 不同端口同时提供rpc和http服务"
 date: 2022-2-25
 tags: [Go]
 comments: true

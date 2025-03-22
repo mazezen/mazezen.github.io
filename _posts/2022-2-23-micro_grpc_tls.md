@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务五 Go - gRPC 中的TLS认证"
+title: "Go微服务五 gRPC 中的TLS认证"
 date: 2022-2-23
 tags: [Go]
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务十二  Go使用nacos 注册服务，服务发现"
+title: "Go微服务使用nacos 注册服务，服务发现"
 date: 2022-3-12
 tags: [Go]
 comments: true

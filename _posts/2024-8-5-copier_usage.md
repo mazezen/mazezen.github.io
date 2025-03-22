@@ -2,7 +2,7 @@
 layout: post
 title: "使用copier提升开发效率"
 date:    2024-8-05
-tags: [GO]
+tags: [Go]
 comments: true
 author: mazezen
 ---

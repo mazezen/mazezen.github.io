@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go 使用IP纯真库获取IP对应的国家、省、市"
+title: "Go Runtime"
 date: 2022-2-16
 tags: [Go]
 comments: true
@@ -8,19 +8,11 @@ author: mazezen
 ---
 
 runtime里的三个函数Gosched、Goexit、GOMAXPROCS
-
 Gosched：让出cpu时间切片。用于让出当前grouting的执行权限，调度器安排其他等待的goroutine执行任务，并在某个位置恢复执行
-
-
 Goexit：终止当前的goroutine执行，并不会影响其他的goroutine执行。并在终止当前的goroutine之前，执行还未执行的defery语句. 如果Goexit在main函数中执行会报panic
-
-
 GOMAXPROCS： 用来设置可以并行计算的CPU核数最大值，并返回之前的值。 1～256 最好在主函数之前设置，否则会终止当前的任务执行
-
 Go 默认是一个cpu核的，可以通过GOMAXPROCS来设置
-
 Gosched：
-
 不加Gosched, 子协程并不会打印出来
 
 ```go

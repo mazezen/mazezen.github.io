@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务二 Go+nacos 实现配置共享"
+title: "Go微服务 nacos 实现配置共享"
 date: 2022-2-18
 tags: [Go]
 comments: true

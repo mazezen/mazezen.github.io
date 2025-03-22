@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "微服务十八  搭建 mysql 主从同步"
+title: "Go微服务搭建 mysql 主从同步"
 date: 2022-4-18
 tags: [Go]
 comments: true

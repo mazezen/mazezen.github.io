@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go 微服务十四 Go 使用leveldb"
+title: "Go微服务使用leveldb"
 date: 2022-3-19
 tags: [Go]
 comments: true
@@ -8,9 +8,8 @@ author: mazezen
 ---
 
 
-## 简介
-
-**LevelDB**是一个由Google公司所研发的键-值存储嵌入式数据库管理系统编程库
+ 简介
+> LevelDB是一个由Google公司所研发的键-值存储嵌入式数据库管理系统编程库
 
 
 

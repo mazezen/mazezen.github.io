@@ -1,15 +1,13 @@
 ---
 layout: post
-title: "使用copier提升开发效率"
+title: "Go1.23新特性"
 date:    2024-8-01
-tags: [GO]
+tags: [Go]
 comments: true
 author: mazezen
 ---
 
 *截止到目前为止，go1.23的正式版还没有发布，但是其预发布版本，也就是rc版本已经开放下载了。初步体验一下*
-
-
 
 ### 安装
 

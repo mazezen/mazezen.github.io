@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "微服务 二十 Mysql8多主一从搭建"
+title: "微服务Mysql8多主一从搭建"
 date: 2022-5-18
 tags: [Go]
 comments: true

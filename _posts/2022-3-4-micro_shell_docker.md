@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务十 编写shell脚本启动docker部署的go项目"
+title: "Go微服务 编写shell脚本启动docker部署的go项目"
 date: 2022-3-4
 tags: [Go]
 comments: true

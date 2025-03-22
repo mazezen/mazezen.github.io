@@ -7,13 +7,9 @@ comments: true
 author: mazezen
 ---
 
+OpenFeign 简介
 
-
-[TOC]
-
-## OpenFeign 简介
-
-OpenFeign 提供了一种**声明式的远程调用接口**。
+> OpenFeign 提供了一种**声明式的远程调用接口**。
 
 ## OpenFeign 能做什么
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务三 Go -rpc"
+title: "Go微服务 rpc"
 date: 2022-2-19
 tags: [Go]
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "微服务 二十一 Mycat中间件 实现主从读写分离"
+title: "微服务Mycat中间件,实现主从读写分离"
 date: 2022-5-17
 tags: [Go]
 comments: true

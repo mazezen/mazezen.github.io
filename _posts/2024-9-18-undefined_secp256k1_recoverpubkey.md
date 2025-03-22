@@ -2,7 +2,7 @@
 layout: post
 title: "undefined: secp256k1.RecoverPubkey"
 date:    2024-9-18
-tags: [GO]
+tags: [Go]
 comments: true
 author: mazezen
 ---

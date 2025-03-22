@@ -2,14 +2,12 @@
 layout: post
 title: "go echo框架引入swagger"
 date:    2024-7-22
-tags: [GO]
+tags: [Go]
 comments: true
 author: mazezen
 ---
 
-在项目开发中，避免不了的写api接口文档。这是一件费时费力的事情，因为接口可能随时变动，就要更新接口文档。引入swagger可以节省开发时间，减少开发者的工作量
-
-
+> 在项目开发中，避免不了的写api接口文档。这是一件费时费力的事情，因为接口可能随时变动，就要更新接口文档。引入swagger可以节省开发时间，减少开发者的工作量
 
 #### 1. 安装swag 
 

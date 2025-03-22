@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go微服务七 同一端口监听grpc和http服务"
+title: "Go微服务 同一端口监听grpc和http服务"
 date: 2022-2-26
 tags: [Go]
 comments: true
