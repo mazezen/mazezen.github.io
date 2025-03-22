@@ -234,7 +234,10 @@ type FrontViewTarget struct {
 
 func main() {
 
-	sqlUserSource := []SqlUserSource{{Name: "78651", Address: "jinzhu.address"}, {Name: "786512", Address: "jinzhu.address2"}}
+	sqlUserSource := []SqlUserSource{
+		{Name: "78651", Address: "jinzhu.address"}, 
+		{Name: "786512", Address: "jinzhu.address2"},
+		}
 	var target []FrontViewTarget
 	if err := copier.Copy(&target, sqlUserSource); err != nil {
 		log.Fatalln("Error: ", err)
