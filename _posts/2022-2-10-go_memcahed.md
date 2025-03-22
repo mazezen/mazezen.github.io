@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Go操作Memcached"
-date: 2022-02-10
+date: 2022-2-10
 tags: [Go]
 comments: true
 author: mazezen
