@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mac系统效率开发笔记集合"
-date: 2022-2-2
+date: 2020-2-2
 tags: [随笔]
 comments: true
 author: mazezen
@@ -34,29 +34,37 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 5. 配置 oh my zsh
 
-   * 高亮显示 zsh-syntax-highlighting
-
-     ```shell
-     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$ZSH/custom}/themes/powerlevel10k
-     ```
-
    * 自动补全  zsh-autosuggestions
-
      ```shell
-     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$ZSH/custom}/plugins/zsh-autosuggestions
+     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$ZSH/custom}/plugins/zsh-autosuggestions 
+
+     vim ~/.zshrc
+     plugins=(
+        // other plugins...
+        zsh-autosuggestions
+     )
      ```
 
-   * 安装autojump
-
+   * 命令行关键字高亮显示
      ```shell
-     git clone https://github.com/wting/autojump ${ZSH_CUSTOM:-$ZSH/custom}/plugins/autojump
-     cd ${ZSH_CUSTOM:-$ZSH/custom}/plugins/autojump
-     ./install.py
+     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
      
-     or
-     brew install autojump
+     vim ~/.zshrc
+     plugins=(
+        // other plugins...
+        zsh-syntax-highlighting
+     )
      ```
+   * zsh-vi-mode
+     ```shell
+     git clone https://github.com/jeffreytse/zsh-vi-mode $ZSH_CUSTOM/plugins/zsh-vi-mode
 
+     vim ~/.zshrc
+     plugins=(
+        // other plugins...
+        zsh-vi-mode
+     )
+     ```
    * souce ~/.zshrc
 
    * 重启 iterm2
