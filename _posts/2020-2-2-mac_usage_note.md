@@ -2,7 +2,7 @@
 layout: post
 title: "Mac系统效率开发笔记集合"
 date: 2020-2-2
-tags: [随笔]
+tags: [编程,随笔]
 comments: true
 author: mazezen
 ---
