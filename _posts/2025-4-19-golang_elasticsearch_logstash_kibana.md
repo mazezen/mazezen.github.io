@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "将 Elasticsearch、Logstash 和 Kibana 与 Go 应用程序结合使用"
+title: "将 PostgreSQL、Elasticsearch、Logstash 和 Kibana 与 Go 应用程序结合使用"
 date: 2025-4-19
 tags: [Go]
 comments: true
