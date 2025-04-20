@@ -20,7 +20,7 @@ author: mazezen
 
 #### 流程
 
-1. worker 产生日子,输出到终端(可选), 日志文件, 及队列
+1. worker 产生日志,输出到终端(可选), 日志文件, 及队列
 2. logstash 作为消费者从队列中拿到日志输出到 elasticsearch
 3. elasticsearch 结合 Kibana,可视化展示日志
    > 队列: 本篇文章采用的是 redis list. 生成环境不建议使用 redis list. 如果日志产生速度非常快, redis list 是比较消耗服务器 CPU,内存的.建议换成其他 MQ,比如 kafka
