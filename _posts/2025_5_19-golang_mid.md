@@ -2,7 +2,7 @@
 layout: post
 title: "分布式ID生成系统"
 date: 2025-4-11
-tags: [微服务]
+tags: [Go]
 comments: true
 author: mazezen
 ---
