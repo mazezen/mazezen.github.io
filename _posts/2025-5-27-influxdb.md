@@ -572,3 +572,35 @@ influx query 'from(bucket: "influxdb")
 	}
 ```
 
+
+
+## Node操作Influxdb2
+
+<a href="https://github.com/mazezen/examples/tree/master/influxdb_node_client" target="_blank"> 完整代码</a>
+
+### 安装依赖
+
+First, you need to create a new go module. Run the commands below in your terminal.
+
+```bash
+mkdir -p influxdb_node_client
+cd influxdb_go_client
+```
+
+```bash
+npm install --save @influxdata/influxdb-client
+```
+
+
+
+### 获取Token
+
+InfluxDB Cloud使用令牌来验证API访问。我们已为此设置过程为您创建了一个全访问令牌。
+
+```bash
+LVbJ5lreeauQy8QpILuBoTrqArti8hTRtrQDSG4_xoQefYIPl9yqJFYBt03a2kO5GNgcgKU0diYIMnEnJCVsYg==
+```
+
+
+
+### 初始化客户端
