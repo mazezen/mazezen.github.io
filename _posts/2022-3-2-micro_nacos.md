@@ -7,6 +7,7 @@ comments: true
 author: mazezen
 ---
 
+
 Go使用阿里nacos管理服务注册和发现，思路Demo
 
 ### 连接nacos
