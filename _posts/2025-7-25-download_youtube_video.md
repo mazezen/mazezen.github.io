@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "发布npm包"
+title: "下载YouTube视频和音频"
 date: 2025-7-25
-tags: [下载YouTube视频和音频]
+tags: [编程随笔]
 comments: true
 author: mazezen
 ---
