@@ -19,7 +19,7 @@ author: mazezen
 作为程序猿，在实际工作中，需要经常连接各个环境的服务器查看日志等操作。每次都要打开终端输入 <span style="color:red;">ssh root@ip</span>，步骤繁琐，浪费时间
 
 使用 alfred+iterm2+ssh，可以实现一步直达。丝滑倍爽，如下图
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/44feb8319fa4f95433cdd3c16882ccc1.png#pic_center)
+<img src="../images/mac_alfred_ssh5.png">
 
 ### ssh config
 
