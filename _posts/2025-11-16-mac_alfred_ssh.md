@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Mac+效率神器alfred集成ssh+iterm2实现一步登陆服务器"
+title: "Mac效率神器alfred集成ssh,iterm2实现一步登陆服务器"
 date: 2025-11-16
 tags: [编程随笔]
 comments: true
 author: mazezen
 ---
 
-### **背景**
+**背景**
 
 环境：Mac
 
