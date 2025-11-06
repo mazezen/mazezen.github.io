@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Mac效率神器alfred集成ssh-iterm2实现一步登陆服务器"
-date: 2025-11-16
+title: "Mac效率神器alfred集成ssh-iterm2实现一步登陆服务器及 Workflows集合"
+date: 2025-11-6
 tags: [编程随笔]
 comments: true
 author: mazezen
@@ -98,3 +98,17 @@ Host caixiaoxin
 
 回车
 ![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/5d061899180bd5359bc0641e6fe9ccc5.jpeg#pic_center)
+
+## 记录几款 Alfred workflow 效率插件
+
+地址: https://alfred.app/workflows/
+
+1. [atop] : https://alfred.app/workflows/chrisgrieser/atop/
+2. [BrowserTabs] : https://alfred.app/workflows/epilande/browser-tabs/
+3. [GoToHere] : https://alfred.app/workflows/paulrudy/go-to-here/
+4. [MovieAndTvShowSearch] : https://alfred.app/workflows/tmcknight/movie-and-tv-show-search/
+5. [NewFile] : https://alfred.app/workflows/zeitlings/new-file/
+6. [OpenInVsCode] : https://alfred.app/workflows/mayjunejuly/open-in-vs-code/
+7. [StrongPassword] : https://alfred.app/workflows/vitor/strong-password/
+8. [Translate] : https://alfred.app/workflows/meshchaninov/translate/
+9. [WHOISLookUp] : https://alfred.app/workflows/firefingers21/whois-lookup/
