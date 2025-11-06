@@ -75,29 +75,29 @@ Host caixiaoxin
 安装最新版即可，小编安装的<span style="color:red;">Secure-SHell-0.8.0.alfredworkflow</span>
 
 下载下来，双击自动添加到 alfred 的 Workflows 页,如下图
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/98527f7b118cd5c92aa8eba871ae1731.jpeg#pic_center)
+<img src="../images/mac_alfred_ssh1.jpeg">
 
 此时就可以使用 alfred 来连接远程服务器了。打开 alfred 输入 ssh caixiaoxin，就可以直接连接上目标服务器进行需要的操作了。但是发现，连接上之后，终端使用的 mac 自带的，并不是 iterm2。继续走~
 
 ### 安装 alfred 集成 iterm2 配置
 
 1. 打开 alfred 的 Features 页面, <span style="color:red;">Preferences → Features → Terminal/Shell</span>,将 Application 的值改为 Custom，如下图
-   ![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/189ad67cc13768699f5779db3570bf68.jpeg#pic_center)
+   <img src="../images/mac_alfred_ssh2.jpeg">
 
 打开<a href="https://github.com/vitorgalvao/custom-alfred-iterm-scripts" target="_blank" rel="noopener">[iTem2 plugin for Alfred]</a>，将 custom_iterm_script.applescript 文件中的代码复制到上图的输入框中。一个大牛写的 custom applescript。如下图
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/3234891c075ae5f57ce592a9790b64bf.jpeg#pic_center)
+<img src="../images/mac_alfred_ssh3.jpeg">
 
 2. 打开 iterm2 终端，执行一下代码
-   ![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/2d253fa4e29e73990b587e51df1519bf.jpeg#pic_center)
+   <img src="../images/mac_alfred_ssh4.jpeg">
 
 3. 打开 iterm2 preferences → Profiles → PROFILE_NAME → General → URL Schemes， 选择 ssh。
    配置完成开始体验之旅吧
 
 效果:
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/9612ee5d335bae2b922f7b17c78e1c23.png#pic_center)
+<img src="../images/mac_alfred_ssh5.png">
 
 回车
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/5d061899180bd5359bc0641e6fe9ccc5.jpeg#pic_center)
+<img src="../images/mac_alfred_ssh6.jpeg">
 
 ## 记录几款 Alfred workflow 效率插件
 
