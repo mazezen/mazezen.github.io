@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jenkins安装和使用"
+title: Jenkins安装和使用
 date: 2025-12-10
 tags: [编程随笔]
 comments: true
@@ -179,3 +179,133 @@ pipeline {
 2. 自动 npm install
 3. 自动 build
 4. 自动同步 dist 到目标服务器目录
+
+### 2. 一键打包编译 + 上传 + 部署 Go 项目
+
+> 这里已 github 为例. 实际按需使用
+
+#### ✅ 流程: 从 GitHub 拉取 Go 项目 → 打包编译 → 将 执行程序 部署到目标服务器目录
+
+> 构建: 在 jenkins 内打包编译
+
+#### ✅ 需要安装的插件
+
+- Go Plugin
+
+#### 📌 配置 Go 版本
+
+配置 Go 版本 (此处可以配置多个 Go 版本,适应不用的项目需要)
+Jenkins → Manage Jenkins → Tools → Go installations → Add Go
+
+- Name: 起个名字, 等下 Pipeline → Script 会用到 (我的: Go1.23-scheduler)
+- Version: 选择编译你项目的 Go 版本 (我的: Go 1.23.0)
+
+#### ⭐ 创建 Item 开始构建部署.
+
+- Description: Item 名称描述
+- 选择 Github 项目: 填写 git 仓库地址 (我采用的 https 如果 用 git@ 需要配置 github key) // 可不填
+- Pipeline Script
+
+```pipeline
+pipeline {
+    agent any
+
+    tools {
+        go 'Go1.23-scheduler'   // 上面步骤配置Name
+    }
+
+    options {
+        timeout(time: 10, unit: 'MINUTES')
+        buildDiscarder(logRotator(numToKeepStr: '30'))
+    }
+
+    environment {
+        BINARY_NAME = "bbb"
+        REMOTE_DIR  = "bbb_dir"
+        SSH_SERVER  = "18server"
+    }
+
+    stages {
+        stage('拉取代码') {
+            steps {
+                checkout([$class: 'GitSCM',
+                    branches: [[name: '*/master']],
+                    userRemoteConfigs: [[url: 'https://github.com/xxx/xxx.git']]
+                ])
+            }
+        }
+
+        stage('编译') {
+            steps {
+                script {
+                    def buildTime = sh(script: "date +'%Y.%m.%d.%H:%M:%S'", returnStdout: true).trim()
+
+                    sh """
+                        echo "开始编译 elf（Go 版本：\$(go version)）"
+                        echo "构建时间: ${buildTime}"
+
+                        CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath \\
+                            -ldflags "-w -s -X 'energy/conf.BuildTime=${buildTime}'" \\
+                            -o ${BINARY_NAME} .
+
+                        echo "编译完成！"
+                        echo "二进制大小："
+                        ls -lh ${BINARY_NAME}
+                    """
+                }
+            }
+        }
+
+        stage('上传到服务器') {
+            steps {
+                sshPublisher(
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: "${SSH_SERVER}",
+                            transfers: [
+                                sshTransfer(
+                                    sourceFiles: "${BINARY_NAME}", // Dockerfile, deploy.sh, config.yaml 根据你项目实际情况加
+                                    remoteDirectory: "${REMOTE_DIR}",
+                                    flatten: true,   // 直接覆盖旧文件
+                                    cleanRemote: false
+                                )
+                                sshTransfer(
+                                    execCommand: """
+                                        cd ${REMOTE_DIR}
+                                        chmod +x ${BINARY_NAME} deploy.sh
+                                        echo "开始自动部署..."
+                                        sudo ./deploy.sh
+                                        echo "部署完成！"
+                                    """,
+                                    execTimeout: 120000   // 超时2分钟，防止卡住
+                                )
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "========================================"
+            echo "编译 + 上传 + 自动部署 全部成功！"
+            echo "服务已重启，无需手动操作"
+            echo "========================================"
+        }
+        failure {
+            echo "构建或部署失败，请查看上面日志"
+        }
+    }
+}
+```
+
+#### 🚀 完成后构建流程
+
+以后你只要点击 Jenkins 的 Build Now ：
+
+1. 从 GitHub 拉代码
+2. 自动 go build
+3. 自动上传同步
+4. 自动部署
