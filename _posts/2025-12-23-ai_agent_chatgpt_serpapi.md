@@ -9,12 +9,12 @@ author: mazezen
 
 # 使用 OpenAI 大模型 结合 SerpApi 构建一个简易的 AI Agent(AI 智能体)
 
-<a href="https://github.com/mazezen/hello-agents/tree/master/04build-agent">查看完整代码</a>
+<a href="https://github.com/mazezen/hello-agents/tree/master">查看完整代码</a>
 
 > 最近在读<<从零开始构建智能体>>这本书,学习研究 AI Agent.在此记录本次的学习成功及流程.
 >
 > 本篇文章大部分代码来自于 <<从零开始构建智能体>>.与书中不同的是,书中采用的是 Qwen 大模型. 而我采用的是 ChatGPT 大模型. 大同小异
-> 完整代码请查看 <a href="">build-agent</a>
+> 完整代码请查看 <a href="https://github.com/mazezen/hello-agents/tree/master/04build-agent">build-agent</a>
 
 ## Ai Agent 简介
 
@@ -321,4 +321,4 @@ Action: Finish[answer="华为最新的手机是华为 Pura 80 系列（其中 Pu
 🎉 最终答案: answer="华为最新的手机是华为 Pura 80 系列（其中 Pura 80 Ultra 为本轮旗舰，另有 Pura 80 Pro、Pura 80 Pro+，以及标准版在同一发布周期内同步推进）。主要卖点包括：\n- 1英寸高动态范围主摄（Pura 80 Pro+ 与 Pura 80 Ultra 均具备）— 暗部细节丰富、动态范围更广；\n- 红枫原色摄像头与像素级色彩校准，色彩还原精准、画质稳定；\n- Pura 80 Ultra 独有的“聚光宝盒”光效提升，提升低光与夜景拍摄表现；\n- 鸿蒙 AI 与 HarmonyOS 5.x 的深度协同，摄影/视频等功能体验优化；\n- 麒麟9020 处理器与系统级优化，提供强劲性能与能效表现；\n- 发布与开售时间：Pura 80 Pro/Pro+ 14 日开售，起售价 6499 元/7999 元；Pura 80 Ultra 起售价 9999 元，26 日开售，标准版7月开售。"
 ```
 
-<a href="https://github.com/mazezen/hello-agents/tree/master/04build-agent">查看完整代码</a>
+<a href="https://github.com/mazezen/hello-agents/tree/master">查看完整代码</a>
