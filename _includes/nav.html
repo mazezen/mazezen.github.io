@@ -1,4 +1,10 @@
-<div class="wrapper-sidebar">
+<button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div class="wrapper-sidebar" id="sidebar">
   <header class="sidebar clearfix">
     <div class="site-info">
       {% if site.avatar %}
@@ -27,3 +33,31 @@
     </footer>
   </div>
 </div>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('sidebarToggle');
+    var body = document.body;
+
+    // Default: collapsed
+    body.classList.add('sidebar-collapsed');
+
+    toggle.addEventListener('click', function() {
+      body.classList.toggle('sidebar-collapsed');
+      toggle.classList.toggle('open');
+    });
+
+    // Close sidebar when clicking outside on desktop
+    document.addEventListener('click', function(e) {
+      var sidebar = document.getElementById('sidebar');
+      if (
+        window.innerWidth > 768 &&
+        !body.classList.contains('sidebar-collapsed') &&
+        !sidebar.contains(e.target) &&
+        !toggle.contains(e.target)
+      ) {
+        body.classList.add('sidebar-collapsed');
+      }
+    });
+  })();
+</script>
