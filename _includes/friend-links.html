@@ -1,0 +1,18 @@
+{% if site.data.friends and site.data.friends.size > 0 %}
+<div class="friend-links">
+  <div class="friend-links-header">
+    <span class="friend-links-icon">🔗</span>
+    <span>友情链接</span>
+  </div>
+  <div class="friend-links-body">
+    {% for friend in site.data.friends %}
+    <a href="{{ friend.url }}" class="friend-link-item" target="_blank" rel="noopener noreferrer" title="{{ friend.desc }}">
+      <span class="friend-link-name">{{ friend.name }}</span>
+      {% if friend.desc %}
+      <span class="friend-link-desc">{{ friend.desc }}</span>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

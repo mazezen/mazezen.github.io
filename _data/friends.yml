@@ -1,0 +1,17 @@
+# 友情链接 / 优秀博客推荐
+# 在这里添加你推荐的博客链接，格式：
+# - name: 博客名称
+#   url: 博客地址
+#   desc: 简短描述（可选）
+
+# - name: "Jekyll"
+#   url: "https://jekyllrb.com"
+#   desc: "静态站点生成器"
+
+- name: "FFmpeg Author: bellard"
+  url: "https://bellard.org/"
+  desc: "bellard home"
+
+- name: "benjojo"
+  url: "https://blog.benjojo.co.uk/"
+  desc: "benjojo blog"

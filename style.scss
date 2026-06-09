@@ -730,6 +730,118 @@ nav {
   }
 }
 
+// Friend Links
+.friend-links {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+  width: 100%;
+
+  @include mobile {
+    margin-top: 24px;
+  }
+}
+
+.friend-links-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid $divider-color;
+  font-size: 16px;
+  font-weight: 600;
+  color: $base-color;
+
+  .friend-links-icon {
+    font-size: 18px;
+  }
+}
+
+.friend-links-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.friend-link-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid $divider-color;
+  border-radius: 6px;
+  background-color: $background-color;
+  text-decoration: none;
+  transition: all 0.25s ease;
+
+  &:hover {
+    border-color: $link-lighten-color;
+    background-color: $link-bghv-color;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.friend-link-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: $link-color;
+
+  .friend-link-item:hover & {
+    color: $link-lighten-color;
+  }
+}
+
+.friend-link-desc {
+  font-size: 12px;
+  color: $base-lighten-color;
+  white-space: nowrap;
+}
+
+// Sidebar friend links (compact layout)
+.wrapper-footer-desktop .friend-links {
+  margin: 0 0 16px;
+  padding: 0 10px;
+  max-width: 100%;
+
+  .friend-links-header {
+    font-size: 14px;
+    justify-content: center;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+
+    .friend-links-icon {
+      font-size: 14px;
+    }
+  }
+
+  .friend-links-body {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .friend-link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .friend-link-name {
+    font-size: 13px;
+  }
+
+  .friend-link-desc {
+    font-size: 11px;
+    white-space: normal;
+    line-height: 1.3;
+  }
+}
+
 // Footer
 .wrapper-footer-desktop {
   margin-top: 50px;

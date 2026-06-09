@@ -43,7 +43,7 @@ footer-links:
   # email: llong87@163.com
   facebook:
   flickr:
-  github: mazezen 
+  github: mazezen
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram:
   linkedin:
@@ -69,7 +69,7 @@ gitalk:
   owner: mazezen
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-#google_analytics: 
+#google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -79,7 +79,7 @@ url: https://mazezen.github.io
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-# baseurl: 
+# baseurl:
 
 #
 # !! You don't need to change any of the configuration flags below !!
@@ -99,7 +99,7 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+    css_class: "highlight"
 
 # Set the Sass partials directory, as we're using @imports
 sass:
@@ -118,4 +118,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
