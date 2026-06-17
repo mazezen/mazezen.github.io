@@ -15,3 +15,7 @@
 - name: "benjojo"
   url: "https://blog.benjojo.co.uk/"
   desc: "benjojo blog"
+
+- name: "beej"
+  url: "https://beej.us/"
+  desc: "beej's home page"
